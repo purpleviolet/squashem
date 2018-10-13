@@ -7,7 +7,7 @@ import pytest
 
 from click.testing import CliRunner
 
-from squashem import squashem
+from squashem.squashem import squashem
 from squashem import cli
 
 
@@ -25,6 +25,12 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
+
+
+def test_squashem_function():
+    matrix = [[1, 2, 3], [4, 5, 6]]
+    new_list = squashem(matrix)
+    assert new_list == [1, 2, 3, 4, 5, 6]
 
 
 def test_command_line_interface():
