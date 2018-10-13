@@ -26,7 +26,7 @@ Flattens 2D lists of lists
 Features
 --------
 
-* TODO
+* Contains function ``squashem`` that when given a 2-D list of lists, returns a single list of all the elements from the input list of lists.
 
 Credits
 -------
